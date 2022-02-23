@@ -17,15 +17,18 @@ s3_hcp_unmount:
 #Preprocessed data from NeuroMatchAcademy
 #Mineault, Patrick, Carsen Stringer, Jorge A Menendez, Pierre-Étienne Fiquet, Byron Galbraith, Michael Waskom, Bernard M ’t Hart, et al. 2022. “Neuromatch Academy.” OSF. January 7. osf.io/hygbm.
 get_task_data:
+	mkdir $(DATA_PATH)
 	cd $(DATA_PATH)
 	wget $(HCP_TASK_DATA) -o hcp_task.tar.gz
 	tar -xf hcp_task.tar.gz
 
 get_rest_data:
+	mkdir $(DATA_PATH)
 	cd $(DATA_PATH)
 	wget $(HCP_REST_DATA) -o hcp_rest.tar.gz
 
 get_brain_atlas:
+	mkdir $(DATA_PATH)
 	cd $(DATA_PATH)
 	wget $(BRAIN_ATLAS) -o brain_atlas.npy
 
