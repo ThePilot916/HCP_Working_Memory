@@ -20,12 +20,12 @@ s3_hcp_unmount:
 get_task_data:
 	mkdir $(DATA_PATH)
 	wget $(HCP_TASK_DATA) -O $(DATA_PATH)/hcp_task.tar.gz
-	tar -xf $(DATA_PATH)/hcp_task.tar.gz
+	tar -xvf $(DATA_PATH)/hcp_task.tar.gz -C $(DATA_PATH)
 
 get_rest_data:
 	mkdir $(DATA_PATH)
 	wget $(HCP_REST_DATA) -O $(DATA_PATH)/hcp_rest.tar.gz
-	tar -xf $(DATA_PATH)/hcp_rest.tar.gz
+	tar -xvf $(DATA_PATH)/hcp_rest.tar.gz -C $(DATA_PATH)
 
 get_brain_atlas:
 	mkdir $(DATA_PATH)
@@ -34,6 +34,6 @@ get_brain_atlas:
 get_all:
 	get_task_data get_rest_data get_brain_atlas
 
-clean:
+clear_data:
 	rm -r $(DATA_PATH)
 	rm -r $(OUTPUT_PATH)
