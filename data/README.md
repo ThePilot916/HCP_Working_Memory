@@ -4,6 +4,8 @@ National Institute of Dental and Craniofacial Research (NIDCR), the National Ins
 National Institute of Neurological Disorders and Stroke (NINDS). HCP data are disseminated by the Laboratory of Neuro
 Imaging at the University of Southern California.
 
+HCP Data Reference Manual: https://www.humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Reference_Manual.pdf
+
 WU-Minn HCP Data - 1200 Subjects: https://db.humanconnectome.org/data/projects/HCP_1200
 
 TaskfMRI_Stimuli is available under Task Resources/E-Prime Scripts on https://db.humanconnectome.org/data/projects/HCP_1200
